@@ -1,0 +1,23 @@
+curl -X POST -H 'Content-Type: application/json' -d '{
+	"name": "butteredBagel", 
+		"ingredients": [
+			"1 bagel", 
+			"butter"
+		], 
+	"instructions": [
+		"cut the bagel", 
+		"spread butter on bagel"
+	]
+}' localhost:5000/recipes
+
+curl -X PUT -H 'Content-Type: application/json' -d '{
+	"name": "butteredBagel", 
+		"ingredients": [
+			"1 bagel", 
+			"2 tbsp butter"
+		], 
+	"instructions": [
+		"cut the bagel", 
+		"spread butter on bagel"
+	] 
+}' localhost:5000/recipes
